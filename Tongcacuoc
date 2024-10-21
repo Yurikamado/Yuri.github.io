@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+// Hàm tìm và in các ước của số n
+void findDivisors(int n) {
+    int i = 1;
+    cout << "Cac uoc so cua " << n << " la: ";
+    while (i <= n) {
+        if (n % i == 0) {
+            cout << i << " ";
+        }
+        i++;
+    }
+    cout << endl;
+}
+
+// Hàm tính tổng các ước số của n
+int sumOfDivisors(int n) {
+    int sum = 0, i = 1;
+    while (i < n) {
+        if (n % i == 0) {
+            sum += i;
+        }
+        i++;
+    }
+    return sum;
+}
+
+// Hàm kiểm tra số hoàn hảo
+bool isPerfectNumber(int n) {
+    return sumOfDivisors(n) == n;
+}
+
+int main() {
+    int n;
+    cout << "Nhap so nguyen duong n: ";
+    cin >> n;
+
+    // Tìm các ước của n
+    findDivisors(n);
+
+    // Tính tổng các ước số của n (trừ chính nó)
+    int sum = sumOfDivisors(n);
+    cout << "Tong cac uoc so (tru chinh no) cua " << n << " la: " << sum << endl;
+
+    // Kiểm tra số hoàn hảo
+    if (isPerfectNumber(n)) {
+        cout << n << " la so hoan hao." << endl;
+    } else {
+        cout << n << " khong phai la so hoan hao." << endl;
+    }
+
+    return 0;
+}
