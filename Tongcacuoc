@@ -4,14 +4,7 @@ using namespace std;
 // Hàm tìm và in các ước của số n
 void findDivisors(int n) {
     int i = 1;
-    cout << "Cac uoc so cua " << n << " la: ";
-    while (i <= n) {
-        if (n % i == 0) {
-            cout << i << " ";
-        }
-        i++;
-    }
-    cout << endl;
+   
 }
 
 // Hàm tính tổng các ước số của n
