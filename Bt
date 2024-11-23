@@ -1,0 +1,127 @@
+<html>
+ <head>
+  <title>
+   Celadon City
+  </title>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('https://placehold.co/1344x633');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            font-size: 24px;
+            color: #6BA539;
+        }
+        .logo-subtext {
+            font-size: 18px;
+            color: #D32F2F;
+        }
+        .hotline {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .form-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(107, 165, 57, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .form-container h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        .form-container p {
+            color: white;
+            margin: 5px 0;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #CDDC39;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="background">
+   <div class="logo">
+    <img alt="Celadon City Logo" height="50" src="https://storage.googleapis.com/a1aa/image/V2K0iTx7vlKGAV8eXhsItvZ0uAk39kqAOrGukSatFDiTk35JA.jpg" width="50"/>
+    <div>
+     <div class="logo-text">
+      CELADON CITY
+     </div>
+     <div class="logo-subtext">
+      GAMUDA LAND
+     </div>
+    </div>
+   </div>
+   <div class="hotline">
+    Hotline: 0985.244.796
+   </div>
+   <div class="form-container">
+    <h2>
+     Đăng ký để nhận ngay mức giá ưu đãi nhất
+    </h2>
+    <p>
+     Ưu tiên chọn căn đẹp nhất
+    </p>
+    <p>
+     Hỗ trợ vay ngân hàng
+    </p>
+    <p>
+     Chiết khấu tốt nhất
+    </p>
+    <input placeholder="Tên của bạn*" type="text"/>
+    <input placeholder="Số điện thoại*" type="text"/>
+    <input placeholder="Email" type="email"/>
+    <button>
+     ĐĂNG KÝ NGAY
+    </button>
+   </div>
+  </div>
+ </body>
+</html>
