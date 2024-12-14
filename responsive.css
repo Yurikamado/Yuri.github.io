@@ -1,0 +1,40 @@
+.fa-youtube{
+    color: red;
+    font-size: 500px;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 500px;
+}
+.fa-instagram{
+    color: pink;
+    font-size: 500px;
+}
+/* Responsive */
+/* Pc chir hiển thị icon youtube */
+@media (min-width: 1024px){
+    .fa-youtube{
+        display: block;
+    }
+    .fa-facebook,.fa-instagram{
+        display: none;
+    }
+}
+/* Tablet chỉ hiển thị icon facebook */
+@media (min-width: 768px) and (max-width: 1023px){
+    .fa-facebook{
+        display: block;
+    }
+    .fa-youtube,.fa-instagram{
+        display: none;
+    }
+}
+/* Mobile chỉ hiển thị instagram */
+@media (max-width: 767px){
+    .fa-instagram{
+        display: block;
+    }
+    .fa-youtube,.fa-facebook{
+        display: none;
+    }
+}
